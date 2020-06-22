@@ -7,6 +7,20 @@
 thistuple = ["diary","book","pen","pencil"]
 print(thistuple)
 
+# create a tuple
+thistuple = ("diary","book","pen","pencil")
+#convert the tuple into a list
+thislis = list(thistuple)
+thislis.pop(0) #removing the first item
+thislis.pop(-1) # removing the last item
+
+# converting the list back to a tuple
+thistuple = tuple(thislis)
+
+# printing the new tuple
+print(thistuple) 
+
+
 
 # In[9]:
 
@@ -36,13 +50,15 @@ print(resList)
 
 
 A = [1,2,3,4,8,10,12,13,15,17]
+Evenlist = []   # create an empty list
+oddlist = []    # create an odd list
 for i in A:
     if i%2 == 0:
         Evenlist.append(i)
     else :
         oddlist.append(i)
-print "Even numbers", EvenList
-print "odd numbers", OddList
+print ("Even numbers", Evenlist)
+print ("odd numbers", oddlist)
 
 
 # In[ ]:
